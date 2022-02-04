@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Yenapoya Technology Incubetar
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 style="text-align: center; color: blue;">Yenapoya Technology Incubetar</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Product-title*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" id="Product">
+                    </div>
+                    <div>
+                        <label>Product-Description</label>
+                        <input type="text" id="Description">
+                    </div>
+                    <div>
+                        <label>Variety</label>
+                        <input type="text" id="Variety">
+                    </div>
+                    <div>
+                        <label>Tax</label>
+                        <input type="text" id="Tax">
+                    </div>
+                    <div>
+                        <label>Price</label>
+                        <input type="text" id="Price">
+                    </div>
+                    <div>
+                        <label>Brand</label>
+                        <input type="text" id="Brand">
+                    </div>
+                    <div>
+                        <label>Rating</label>
+                        <input type="text" id="Rating">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Product-title</th>
+                            <th>Product-Description</th>
+                            <th>Variety</th>
+                            <th>Tax</th>
+                            <th>Price</th>
+                            <th>Brand</th>
+                            <th>Rating</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <form action="/action_page.php">
+        <label for="img">Select image:</label>
+        <input type="file" id="img" name="img" accept="image/*">
+        <input type="submit">
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
